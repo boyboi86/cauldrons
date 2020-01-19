@@ -7,20 +7,20 @@ const Profile = () => {
         <AppHead subject="Personal Profile"/>
         <div className='description'>
             <p>
-            Part time cashier and night time Machine-learning researcher
+            Part-time cashier & Night-time Machine-learning Practitioner
             </p>
             <p>
             Self-taught Technologist in Node.js, Python and Linux OS
             </p>
             <p>
-            Experienced in risk management, financial analysis and derivatives
+            Experienced in Risk Management, Financial Analysis and Derivatives
             </p>
             <p>
-            Applied Research and experimental mathematics 
-            on ETF rotation, Volatility Strategies and Value Fundamentals
+            Applied Research & Experimental Mathematics 
+            on ETF Rotation, Volatility Strategies and Value Fundamentals Screener
             </p>
             <p>
-            While trying to read books with good review using whatever time I have left
+            Using remaining time to read books with good review
             </p>
         </div>
         </div>
