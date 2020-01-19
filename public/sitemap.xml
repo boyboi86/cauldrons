@@ -10,14 +10,17 @@
 <url>
   <loc>https://www.cauldrons.co/</loc>
   <lastmod>2020-01-18T12:31:46+00:00</lastmod>
+  <changefreq>daily</changefreq>
 </url>
 <url>
   <loc>https://www.cauldrons.co/philosophy</loc>
   <lastmod>2020-01-18T12:31:46+00:00</lastmod>
+  <changefreq>daily</changefreq>
 </url>
 <url>
   <loc>https://www.cauldrons.co/profile</loc>
   <lastmod>2020-01-18T12:31:46+00:00</lastmod>
+  <changefreq>daily</changefreq>
 </url>
 
 </urlset>
