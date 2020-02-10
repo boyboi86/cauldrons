@@ -24,7 +24,7 @@
    "sizes": "144x144",
    "type": "image\/png",
    "density": "2.0"
-  },
+  }
   ],
   "start_url": ".",
   "display": "standalone",
