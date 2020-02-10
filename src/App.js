@@ -3,7 +3,6 @@ import ParticlesBg from 'particles-bg';
 import { BrowserRouter, Link } from 'react-router-dom';
 
 import email from './icons/email_icon.png'
-import linkedin from './icons/linkedin_icon.png'
 import idea from './icons/idea_icon.png'
 import me from './icons/me_icon.png'
 
@@ -19,17 +18,14 @@ const AppBottom = () => {
       </div>
     <div className="Images">
         <Link to = "/">
-            <img className="email" rel="icon" src={email} alt="About Cauldrons"/>
+            <img className="email icons" rel="icon" src={email} alt="About Cauldrons"/>
         </Link>
         <Link to = "/philosophy">
-            <img className="idea" rel="icon" src={idea} alt="Quantamental Philosophy"/>
+            <img className="idea icons" rel="icon" src={idea} alt="Quantamental Philosophy"/>
         </Link>
         <Link to = "/profile">
-            <img className="myself" rel="icon" src={me} alt="About Me"/>
+            <img className="myself icons" rel="icon" src={me} alt="About Me"/>
         </Link>
-        <a href="https://www.linkedin.com/in/wx-l-a74764167/">
-            <img className="linkedin" rel="icon" src={linkedin} alt="Linkedin Profile"/>
-        </a>
     </div>
     </div>
   );   
