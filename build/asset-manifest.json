@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.8e9642ef.chunk.css",
-    "main.js": "/static/js/main.f755c252.chunk.js",
-    "main.js.map": "/static/js/main.f755c252.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.889ad4b6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.889ad4b6.js.map",
-    "static/css/2.47e06e2e.chunk.css": "/static/css/2.47e06e2e.chunk.css",
-    "static/js/2.162c654a.chunk.js": "/static/js/2.162c654a.chunk.js",
-    "static/js/2.162c654a.chunk.js.map": "/static/js/2.162c654a.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.a1a3e7a9fcacb6d0fb676997f9231f92.js": "/precache-manifest.a1a3e7a9fcacb6d0fb676997f9231f92.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.47e06e2e.chunk.css.map": "/static/css/2.47e06e2e.chunk.css.map",
-    "static/css/main.8e9642ef.chunk.css.map": "/static/css/main.8e9642ef.chunk.css.map",
-    "static/js/2.162c654a.chunk.js.LICENSE": "/static/js/2.162c654a.chunk.js.LICENSE"
+    "main.css": "/cauldrons/static/css/main.d6368958.chunk.css",
+    "main.js": "/cauldrons/static/js/main.c1b102e6.chunk.js",
+    "main.js.map": "/cauldrons/static/js/main.c1b102e6.chunk.js.map",
+    "runtime-main.js": "/cauldrons/static/js/runtime-main.830d74ac.js",
+    "runtime-main.js.map": "/cauldrons/static/js/runtime-main.830d74ac.js.map",
+    "static/css/2.47e06e2e.chunk.css": "/cauldrons/static/css/2.47e06e2e.chunk.css",
+    "static/js/2.6fafe99c.chunk.js": "/cauldrons/static/js/2.6fafe99c.chunk.js",
+    "static/js/2.6fafe99c.chunk.js.map": "/cauldrons/static/js/2.6fafe99c.chunk.js.map",
+    "index.html": "/cauldrons/index.html",
+    "precache-manifest.546d27c96d138ffae64d7541bdb9dc24.js": "/cauldrons/precache-manifest.546d27c96d138ffae64d7541bdb9dc24.js",
+    "service-worker.js": "/cauldrons/service-worker.js",
+    "static/css/2.47e06e2e.chunk.css.map": "/cauldrons/static/css/2.47e06e2e.chunk.css.map",
+    "static/css/main.d6368958.chunk.css.map": "/cauldrons/static/css/main.d6368958.chunk.css.map",
+    "static/js/2.6fafe99c.chunk.js.LICENSE": "/cauldrons/static/js/2.6fafe99c.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.889ad4b6.js",
+    "static/js/runtime-main.830d74ac.js",
     "static/css/2.47e06e2e.chunk.css",
-    "static/js/2.162c654a.chunk.js",
-    "static/css/main.8e9642ef.chunk.css",
-    "static/js/main.f755c252.chunk.js"
+    "static/js/2.6fafe99c.chunk.js",
+    "static/css/main.d6368958.chunk.css",
+    "static/js/main.c1b102e6.chunk.js"
   ]
 }

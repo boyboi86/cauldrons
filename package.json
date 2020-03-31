@@ -2,12 +2,15 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://boyboi86.github.io/cauldrons/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
+    "bootstrap": "^4.4.1",
     "particles-bg": "^2.4.7",
     "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
     "react-router-sitemap": "^1.2.0",
@@ -20,7 +23,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "sitemap": "babel-node ./src/site_map_generator",
-    "homepage": "https://boyboi86.github.io/cauldrons/"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,6 +47,7 @@
     "@babel/preset-env": "^7.8.3",
     "@babel/preset-react": "^7.8.3",
     "babel-cli": "^6.26.0",
-    "babel-register": "^6.26.0"
+    "babel-register": "^6.26.0",
+    "gh-pages": "^2.2.0"
   }
 }
