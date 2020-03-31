@@ -19,7 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sitemap": "babel-node ./src/site_map_generator"
+    "sitemap": "babel-node ./src/site_map_generator",
+    "homepage": "https://boyboi86.github.io/cauldrons/"
   },
   "eslintConfig": {
     "extends": "react-app"
