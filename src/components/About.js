@@ -3,9 +3,9 @@ import PageHead from './pagecomponent/PageHead';
 
 const content = ([
                 "An educational project representing the idea to create profitable quantamental strategies by utilising a suitable mix of methods and assets"
-                ,"Since most profits are made when situation is characterized as 'unstable with strong emotions'"
-                ,"Hence the name 'Cauldrons'"
-                ,"Research scope will not be limited to Index derivatives only and would be extended to other assets classes for strategy diversification & portfolio optimisation"
+                ,'Since most profits are made when situation is characterized as "unstable with strong emotions"'
+                ,'Hence the name "Cauldrons"'
+                ,"Research scope will not be limited to index derivatives only and would be extended to other assets classes for strategy diversification & portfolio optimisation"
                 ])
 
 const About_Cauldrons = () => {
