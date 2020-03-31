@@ -1,26 +1,21 @@
 import React from 'react';
-import AppHead from './AppHead';
+import PageHead from './pagecomponent/PageHead';
+
+const content = ([
+             "Each quantamental strategy has distinct effectiveness in generating superior return under different situations"
+             ,"Therefore employing suitable strategies on specific asset class for each situation, combined with varying durations could potentially reap the optimal reward market could offer"
+             ,"In a nutshell, quantamental focuses on overall strategies' compatibility under different market conditions"
+             ,"Most quantitative methods derived from econometrics, experimental mathematics & machine-learning focus on derivatives"
+             ,"Global equities and some ETFs will most likely utilise portfolio analytics & microecononmics"
+                ])
 
 const Philosophy = () => {
     return (
-    <div>
-    <AppHead subject="Philosophy"/>
-        <div className='description'>
-            <p>
-            Quantamental practice assumes that all investment methodologies are equal and valid
-            </p>
-            <p>
-            Each strategy has distinct effectiveness in generating superior return under different situations
-            </p>
-            <p>
-            Therefore employing suitable strategies on specific asset class for each situation, combined with varying durations
-             could potentially reap the optimal reward market could offer
-            </p>
-            <p>
-            In a nutshell, quantamental focuses on overall strategies' compatibility under different market conditions
-             rather than single asset class or <i>modus operandi</i>
-             </p>
-        </div>
+            <div>
+            <PageHead 
+            subject= 'Investment Philosophy'
+            contents = {content}
+            />
         </div>
     );
 }

@@ -1,28 +1,20 @@
 import React from 'react';
-import AppHead from './AppHead';
+import PageHead from './pagecomponent/PageHead';
+
+const content = ([
+                  'Part-time cashier & Night-time Quantamental Practitioner'
+                  ,'Self-taught Technologist in Node.js, Python and Linux OS'
+                  ,'Well-versed in Volatility & Macroeconomics as well as Value Growth & Dividend Strategy'
+                  ,'Trying to use remaining time to read books with good review'
+                    ])
 
 const Profile = () => {
     return (
     <div>
-        <AppHead subject="Personal Profile"/>
-        <div className='description'>
-            <p>
-            Part-time cashier & Night-time Machine-learning Practitioner
-            </p>
-            <p>
-            Self-taught Technologist in Node.js, Python and Linux OS
-            </p>
-            <p>
-            Experienced in Risk Management, Financial Analysis and Derivatives
-            </p>
-            <p>
-            Applied Research & Experimental Mathematics 
-            on ETF Rotation, Volatility Strategies and Value Fundamentals Screener
-            </p>
-            <p>
-            Using remaining time to read books with good review
-            </p>
-        </div>
+        <PageHead 
+            subject= 'About me'
+            contents = {content}
+             />
         </div>
     );
 }

@@ -1,23 +1,20 @@
 import React from 'react';
-import AppHead from './AppHead';
+import PageHead from './pagecomponent/PageHead';
+
+const content = ([
+                "An educational project representing the idea to create profitable quantamental strategies by utilising a suitable mix of methods and assets"
+                ,"Since most profits are made when situation is characterized as 'unstable with strong emotions'"
+                ,"Hence the name 'Cauldrons'"
+                ,"Research scope will not be limited to Index derivatives only and would be extended to other assets classes for strategy diversification & portfolio optimisation"
+                ])
 
 const About_Cauldrons = () => {
     return (
     <div>
-    <AppHead subject="About Cauldrons"/>
-        <div className='description'>
-            <p>
-            "Cauldrons" is an educational research project which represents the idea 
-            to concoct profitable quantamental strategies by utilising the suitable mix of methods and assets
-            </p>
-            <p>
-            Hence the project name "Cauldrons"
-            </p>
-            <p>
-            Research scope will not be limited for project "Cauldrons"
-            however the research will mainly focus on plausible financial mathematic ideas and identified key fundamental drivers 
-            </p>
-        </div>
+        <PageHead
+            subject = 'Cauldrons'
+            contents = {content}
+        />
     </div>
     );
 }

@@ -1,128 +1,77 @@
-.App-header {
-  background-color: transparent;
-  display: relative;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 60px;
-  margin-bottom: 50px;
-  float: left;
-  color: black;
-  font-family: -apple-system, BlinkMacSystemFont,'Alegreya', sans-serif;
-  font-size: 28px;
-
-    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 3s; /* Firefox < 16 */
-        -ms-animation: fadein 3s; /* Internet Explorer */
-         -o-animation: fadein 3s; /* Opera < 12.1 */
-            animation: fadein 3s;
+.app {
+    font-family: -apple-system, BlinkMacSystemFont,'Alegreya', sans-serif;
 }
 
-.App-bottom {
-  background-color: transparent;
-  display: relative;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 120px;
-  margin-bottom: 50px;
-  float: left;
-  color: black;
-  font-family: -apple-system, BlinkMacSystemFont,'Alegreya', sans-serif;
-  font-size: 28px;
-
-    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 3s; /* Firefox < 16 */
-        -ms-animation: fadein 3s; /* Internet Explorer */
-         -o-animation: fadein 3s; /* Opera < 12.1 */
-            animation: fadein 3s;
+.navbar {
+    opacity: 0.9;
+    zIndex: 1;
+    color: rgba(0, 0, 0, 1);
 }
 
-a:link, a, ul, li {
-    text-decoration: none;
-    list-style-type: none;
-    color: black;
-    padding: 5px 5px 5px 5px;
-    float: right;
-    margin-top: -5px;
-}
-
-.description {
-   font-family: -apple-system, BlinkMacSystemFont,'Alegreya', sans-serif;
-   background-color: rgba(255, 255, 255, 0.6);
-   color: black;
-   display: block;
-   position: absolute;
-   top: 60px;
-   left: 10%;
-    width: 300px;
-    height: 400px;
+.container {
+   background-color: rgba(255, 255, 255, 0.9);
+   color: rgba(0, 0, 0, 1);
+   position: relative;
+   top: 100px;
+   left: 0px;
+   zIndex: 0;
    
-       -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 5s; /* Firefox < 16 */
-        -ms-animation: fadein 5s; /* Internet Explorer */
-         -o-animation: fadein 5s; /* Opera < 12.1 */
-            animation: fadein 5s;
+       -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2.5s; /* Firefox < 16 */
+        -ms-animation: fadein 2.5s; /* Internet Explorer */
+         -o-animation: fadein 2.5s; /* Opera < 12.1 */
+            animation: fadein 2.5s;
 }
 
-
-.Images {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  justify-content: center;
-  color: black;
-  size: 12px;
-
-    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 3s; /* Firefox < 16 */
-        -ms-animation: fadein 3s; /* Internet Explorer */
-         -o-animation: fadein 3s; /* Opera < 12.1 */
-            animation: fadein 3s;
-
+.logo {
+width: 40px;
+padding: 5px 5px 5px 5px;
+margin-bottom: 10px;
 }
 
-.Images .email {
-    margin-right: 5px;
-    margin-bottom: 3px;
-    height: 32px;
-    width: 32px;
+.alink, .alink:hover, .alink:focus, .alink:active {
+    padding: 8px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+    border: none;
+    border-color: none;
+    border-radius: 0px;
 }
 
-.Images .linkedin {
-    margin-right: 5px;
-    margin-bottom: 5px;
+.navbarlink {
+    color: rga(0, 0, 0);
+    margin-left: 10px;
+    left: 10%;
 }
 
-.Images .idea {
-    margin-right: 5px;
-    margin-bottom: 8px;
-    height: 28px;
-    width: 28px;
-}
-
-.Images .myself {
-    margin-right: 5px;
-    margin-bottom: 8px;
-    height: 32px;
-    width: 32px;
-}
-
-.icons {
+.hvr-underline-from-left {
   display: inline-block;
-  opacity: 0.8;
   vertical-align: middle;
-  transform: translateZ(0);
-  box-shadow: 0px 2px 2px trans;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  transition-duration: 0.3s;
-  transition-property: transform;
-  z-index: 0;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
 }
-
-button {
-    border: 1px solid black;
-    border-radius: 4px;
-    padding: 8px;  
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: rgb(169,169,169);
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
 }
 
 .researchpic {
@@ -133,15 +82,6 @@ button {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-}
-
-.icons:hover, .icons:focus {
-  background-color:transparent;
-  transform: scale(1.2);
-  -webkit-transition: all 200ms ease-in;
-  z-index: 10;
-  opacity: 1;
-
 }
 
 bg {
