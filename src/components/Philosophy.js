@@ -3,10 +3,9 @@ import PageHead from './pagecomponent/PageHead';
 
 const content = ([
              "Each quantamental strategy has distinct effectiveness in generating superior return under different situations"
-             ,"Therefore employing suitable strategies on specific asset class for each situation, combined with varying durations could potentially reap the optimal reward market could offer"
+             ,"Therefore employing suitable strategy on specific asset class for each situation under different time span could potentially reap the optimal reward market could offer"
              ,"In a nutshell, quantamental focuses on overall strategies' compatibility under different market conditions"
-             ,"Most quantitative methods derived from econometrics, experimental mathematics & machine-learning focus on derivatives"
-             ,"Global equities and some ETFs will most likely utilise portfolio analytics & microecononmics"
+             ,"Applied method includes econometrics, experimental mathematics, machine-learning, financial analysis & behavioral economics et cetera"
                 ])
 
 const Philosophy = () => {
