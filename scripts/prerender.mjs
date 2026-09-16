@@ -17,17 +17,17 @@ if (!template.includes(marker)) {
 await writeFile(templatePath, template.replace(marker, `<div id="root">${appHtml}</div>`))
 console.log(`prerender: injected ${appHtml.length} characters of static markup`)
 
-// Keep the sitemap's lastmod accurate for every build.
-const lastmod = new Date().toISOString().slice(0, 10)
+// Regenerate the sitemap so `dist/` never depends on a stale copy in public/.
+// No <lastmod>: it could only ever restate the build date, and an inaccurate
+// lastmod is worse than none. The single URL is the canonical homepage.
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://skybrique.com/</loc>
-    <lastmod>${lastmod}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 </urlset>
 `
 await writeFile(path.join(root, 'dist', 'sitemap.xml'), sitemap)
-console.log(`prerender: wrote sitemap.xml (lastmod ${lastmod})`)
+console.log('prerender: wrote sitemap.xml')

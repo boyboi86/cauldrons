@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import { heroWords, site } from '../data/site'
 import { vars } from '../lib/style'
 import { LinkButton } from './ui/LinkButton'
@@ -21,15 +22,22 @@ export function Hero() {
 
           <h1 className="sb-hero__title" id="hero-title">
             {heroWords.map((word, index) => (
-              <span className="sb-hero__line" key={word.text} style={vars({ '--i': index })}>
-                <span className="sb-hero__word">{word.text}</span>
-                <ModuleCluster
-                  className="sb-hero__units"
-                  count={word.units}
-                  total={6}
-                  tone="light"
-                />
-              </span>
+              <Fragment key={word.text}>
+                {/* Separate the words in the DOM text, not just visually, so the
+                    heading reads "Build. Test. Compound." to assistive tech and
+                    text extractors. Whitespace-only flex children are not rendered,
+                    so the layout is unchanged. */}
+                {index > 0 ? ' ' : null}
+                <span className="sb-hero__line" style={vars({ '--i': index })}>
+                  <span className="sb-hero__word">{word.text}</span>
+                  <ModuleCluster
+                    className="sb-hero__units"
+                    count={word.units}
+                    total={6}
+                    tone="light"
+                  />
+                </span>
+              </Fragment>
             ))}
           </h1>
 

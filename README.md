@@ -38,8 +38,9 @@ public/                  Copied verbatim to dist/ (CNAME, favicons, fonts, crawl
   llms-full.txt          the complete homepage content as Markdown
   404.html               standalone branded not-found page (noindex)
 scripts/
-  prerender.mjs          injects the SSR render into dist/index.html
+  prerender.mjs          injects the SSR render into dist/index.html, writes sitemap.xml
   trim-logo.js           regenerates the trimmed wordmarks in public/brand/
+  make-social-card.mjs   regenerates the 1200x630 social card in public/brand/
   copy-fonts.js          regenerates the latin font subsets in public/fonts/
 src/
   main.tsx               client entry (hydrates the prerendered markup)
@@ -123,6 +124,7 @@ plain CSS height. To regenerate after the source assets in `assets/` change:
 
 ```bash
 node scripts/trim-logo.js
+node scripts/make-social-card.mjs
 node scripts/copy-fonts.js
 ```
 
@@ -143,7 +145,7 @@ discouraged:
 - **`public/llms.txt`** and **`public/llms-full.txt`** give LLMs a curated summary and the full page
   text in Markdown, with an explicit usage statement.
 - **Structured data.** `index.html` embeds JSON-LD describing the organisation, the website and the
-  page (`ResearchOrganization`, `WebSite`, `WebPage`).
+  page (`Organization`, `WebSite`, `WebPage`).
 - **`LICENSE`** asserts proprietary rights over the design, code and brand assets and permits
   indexing and summarising with attribution.
 
