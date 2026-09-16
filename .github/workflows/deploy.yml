@@ -1,0 +1,95 @@
+# Builds the Vite + TypeScript site and publishes the static output to
+# GitHub Pages using the official Pages Actions (artifact-based deployment).
+#
+# The gh-pages branch is NOT used. Nothing is committed back to the
+# repository: the built site is uploaded as a Pages artifact and deployed
+# by GitHub.
+#
+# One-time repository setting (otherwise the deploy step fails):
+#   Settings -> Pages -> Build and deployment -> Source: GitHub Actions
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let an in-flight deployment finish instead of cancelling it mid-publish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          # vite@8 requires ^20.19.0 || >=22.12.0; 24 is the current LTS.
+          node-version: '24'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # `npm run build` runs, in order:
+      #   tsc --noEmit                   typecheck
+      #   vite build                     client bundle -> dist/
+      #   vite build --ssr               prerender bundle -> dist-ssr/
+      #   node scripts/prerender.mjs     injects static markup into dist/index.html
+      - name: Build
+        run: npm run build
+
+      - name: Verify build output
+        run: |
+          set -euo pipefail
+          for file in index.html CNAME robots.txt sitemap.xml llms.txt llms-full.txt 404.html .nojekyll; do
+            if [ ! -f "dist/$file" ]; then
+              echo "::error::expected dist/$file to exist"
+              exit 1
+            fi
+          done
+          # This copy only appears once the prerender step has injected the render.
+          if ! grep -q 'From hypothesis to system' dist/index.html; then
+            echo "::error::prerender did not inject the page content"
+            exit 1
+          fi
+          if find dist -name '*.map' | grep -q .; then
+            echo "::error::source maps must not be published"
+            exit 1
+          fi
+          echo "dist/ is ready: $(find dist -type f | wc -l) files, $(du -sh dist | cut -f1)"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+          # `.nojekyll` is hidden and would otherwise be dropped from the artifact.
+          include-hidden-files: true
+
+  deploy:
+    name: Deploy to Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5
+        with:
+          token: ${{ github.token }}
