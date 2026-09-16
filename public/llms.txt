@@ -1,0 +1,28 @@
+# Skybrique Lab
+
+> Skybrique is an independent quantitative research lab exploring algorithms, statistical methods and machine learning for systematic investing. We develop ideas, test them against data, learn from failure and share useful research and tools through an open-source approach.
+
+Skybrique Lab builds, tests and compounds ideas. Motto: Build. Test. Compound.
+
+## Core pages
+
+- [Home](https://skybrique.com/): research process, mission, research areas, projects and open-source work.
+- [Full site text](https://skybrique.com/llms-full.txt): the complete homepage content as Markdown.
+
+## Sections
+
+- [Research process](https://skybrique.com/#process): from hypothesis to system — hypothesis, data, algorithm, backtest, evaluation, iteration.
+- [Mission](https://skybrique.com/#mission): research first; failure is information.
+- [Research areas](https://skybrique.com/#research): Systematic Strategies, Machine Learning, Alternative Data, Market Research.
+- [Projects](https://skybrique.com/#projects): ETF Rotation, Aegis, Alternative Data, Systematic Strategies.
+- [Open source](https://skybrique.com/#open-source): research, tools and methodologies shared for inspection and reproduction.
+- [About](https://skybrique.com/#about): the lab's origin and direction.
+
+## Elsewhere
+
+- [GitHub](https://github.com/Skybrique-Lab): source, tools and experiments.
+
+## Usage
+
+- Indexing, quoting and summarising this site is permitted with attribution and a link to https://skybrique.com.
+- The site design, layout, visual language and source code may not be copied or reused. See https://skybrique.com/ for details.

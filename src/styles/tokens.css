@@ -1,0 +1,72 @@
+/* ==========================================================================
+   Design tokens — derived from the Skybrique brand assets
+   Palette: Navy #0B1F3B · Blue #1459D9 · Cyan #18A7E8
+   ========================================================================== */
+
+:root {
+  /* Brand */
+  --navy: #0b1f3b;
+  --navy-700: #12294a;
+  --navy-600: #1b3a63;
+  --navy-400: #33517d;
+  --blue: #1459d9;
+  --blue-600: #1a72df;
+  --blue-300: #6ea0ee;
+  --cyan: #18a7e8;
+
+  /* Surfaces */
+  --paper: #f5f6f8;
+  --paper-2: #ffffff;
+  --paper-3: #eceff3;
+
+  /* Ink */
+  --ink: #0b1f3b;
+  --ink-2: #3a4d66;
+  --ink-3: #566880;
+
+  /* Lines */
+  --line: rgba(11, 31, 59, 0.14);
+  --line-2: rgba(11, 31, 59, 0.075);
+  --line-strong: rgba(11, 31, 59, 0.3);
+  --grid-line: rgba(11, 31, 59, 0.05);
+  --line-dark: rgba(255, 255, 255, 0.18);
+  --line-dark-2: rgba(255, 255, 255, 0.08);
+
+  /* On dark */
+  --on-dark: #eef2f7;
+  --on-dark-2: rgba(238, 242, 247, 0.74);
+  --on-dark-3: rgba(238, 242, 247, 0.56);
+
+  /* Typography */
+  --font-sans: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --text-xs: 0.6875rem;
+  --text-sm: 0.8125rem;
+  --text-base: 1rem;
+  --text-md: 1.0625rem;
+  --text-lg: 1.1875rem;
+  --text-xl: clamp(1.3rem, 1.05rem + 1vw, 1.7rem);
+  --text-2xl: clamp(1.7rem, 1.15rem + 2.2vw, 2.6rem);
+  --text-3xl: clamp(2.1rem, 1.2rem + 3.6vw, 3.6rem);
+  --text-hero: clamp(2.3rem, 0.2rem + 6.6vw, 5.6rem);
+
+  --leading-tight: 1.05;
+  --leading-snug: 1.3;
+  --leading-normal: 1.6;
+  --tracking-wide: 0.16em;
+
+  /* Space & layout */
+  --gutter: clamp(1.25rem, 4.5vw, 3.5rem);
+  --container: 1280px;
+  --section-y: clamp(4.5rem, 8.5vw, 8.5rem);
+  --header-h: 64px;
+
+  /* Shape & motion */
+  --radius-sm: 2px;
+  --radius: 4px;
+  --radius-lg: 8px;
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
