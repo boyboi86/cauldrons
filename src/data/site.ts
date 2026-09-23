@@ -43,7 +43,7 @@ export const site = {
   wordmark: 'Skybrique',
   url: 'https://skybrique.com',
   domain: 'skybrique.com',
-  github: 'https://github.com/Skybrique-Lab',
+  github: 'https://github.com/Skybrique',
   tagline: 'Quantitative research through algorithms, data and experimentation.',
   mission:
     'Skybrique is an independent quantitative research lab exploring algorithms, statistical methods and machine learning for systematic investing. We develop ideas, test them against data, learn from failure and share useful research and tools through an open-source approach.',
@@ -142,7 +142,7 @@ export const projects: readonly Project[] = [
   },
   {
     number: '02',
-    name: 'Aegis',
+    name: 'Seqvex',
     focus: 'Rust-native machine learning',
     status: 'BUILDING',
     tags: ['rust', 'ml runtime', 'engineering'],
